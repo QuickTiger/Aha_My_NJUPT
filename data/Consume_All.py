@@ -13,8 +13,12 @@ hosturl='http://my.njupt.edu.cn'
 posturl='http://my.njupt.edu.cn/ccs/main.login.do'
 
 def getdata(username,password,drcom_nu):
+
+    # The following command is useless and will make remote serve tired.
+    #h = urllib2.urlopen(hosturl)
+
+
 	cj = cookielib.LWPCookieJar() 
-	h = urllib2.urlopen(hosturl) 
 	cookie_support = urllib2.HTTPCookieProcessor(cj) 
 	opener = urllib2.build_opener(cookie_support, urllib2.HTTPHandler) 
 	urllib2.install_opener(opener) 
