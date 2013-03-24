@@ -64,6 +64,7 @@ for line in raws:
 			print(studentID+'\t'+student_name)
 			if studentID==lastone:
 				flag=1
+                continue
 			if lastone=='':
 				flag=1
 			if flag==0:
